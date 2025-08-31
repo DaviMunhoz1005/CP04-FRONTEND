@@ -16,26 +16,6 @@
     padding: 3px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .product-img {
-        min-height: 300px;
-    }
-
-    .btn-circle {   
-        padding: 5px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .product-img {
-        min-height: 350px;
-    }
-
-    .btn-circle {   
-        padding: 8px;
-    }
-}
-
 .discount-badge {
     position: absolute;
     top: 10px;
@@ -58,4 +38,24 @@
     color: #28a745;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .product-img {
+        min-height: 300px;
+    }
+
+    .btn-circle {   
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product-img {
+        min-height: 350px;
+    }
+
+    .btn-circle {   
+        padding: 8px;
+    }
 }

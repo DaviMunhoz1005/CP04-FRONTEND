@@ -4,7 +4,7 @@
 }
 
 .text-primary {
-    color: #29332D !important;
+    color: var(--font-color-darker) !important;
 }
 
 nav .gap-custom {
