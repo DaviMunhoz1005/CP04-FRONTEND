@@ -1,8 +1,16 @@
 .bg-primary {
-    background-image: url("https://cdn.prod.website-files.com/6511cfd2606eaef1830868c7/657371154573c77a18cff6e1_pattern-navbar.webp");
+    background-image: url("../img/fundo-neutro.webp");
     background-color: white !important;
 }
 
 .text-primary {
     color: #29332D !important;
+}
+
+nav .gap-custom {
+    gap: 3rem
+}
+
+header .mx-custom {
+    max-height: 60px;
 }

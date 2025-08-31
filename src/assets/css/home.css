@@ -8,10 +8,6 @@
     font-family: var(--font-contrast);
 }
 
-nav .gap-custom {
-    gap: 3rem
-}
-
 .menu-link {
     font-family: var(--font-link);
     font-weight: bold;
