@@ -1,5 +1,4 @@
 #logo-img {
-    height: 60px;
     object-fit: contain;
     object-position: center;
     display: block;
@@ -7,4 +6,33 @@
 
 #logo-img-legend {
     font-family: var(--font-contrast);
+}
+
+nav .gap-custom {
+    gap: 3rem
+}
+
+.menu-link {
+    font-family: var(--font-link);
+    font-weight: bold;
+}
+
+.menu-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #29332D;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.menu-link:hover {
+    color: #ddd;
 }
