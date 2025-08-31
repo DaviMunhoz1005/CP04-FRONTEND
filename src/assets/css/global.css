@@ -1,7 +1,9 @@
 @import url("custom.css");
+@import url("header.css");
 @import url("../fonts/fonts.css");
 
 :root {
     --font-contrast: "Prompt", sans-serif;
     --font-link: "Quicksand", sans-serif;
+    --font-color-darker: #29332D;
 }

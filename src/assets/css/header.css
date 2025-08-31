@@ -8,10 +8,6 @@
     font-family: var(--font-contrast);
 }
 
-nav .gap-custom {
-    gap: 3rem
-}
-
 .menu-link {
     font-family: var(--font-link);
     font-weight: bold;
@@ -31,8 +27,4 @@ nav .gap-custom {
 
 .menu-link:hover::after {
     width: 100%;
-}
-
-.menu-link:hover {
-    color: #ddd;
 }
