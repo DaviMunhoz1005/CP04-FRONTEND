@@ -1,0 +1,10 @@
+#logo-img {
+    height: 60px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+#logo-img-legend {
+    font-family: var(--font-contrast);
+}
