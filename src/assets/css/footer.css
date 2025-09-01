@@ -1,0 +1,20 @@
+.footer-link {
+    font-family: var(--font-link);
+    font-weight: bold;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #29332D;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
