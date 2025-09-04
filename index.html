@@ -15,49 +15,45 @@
 </head>
 
 <body>
-    <header class="bg-primary d-flex justify-content-between align-items-center p-3 p-md-4 position-relative">
-        <div class="d-flex align-items-center">
-            <img id="logo-img" src="src/assets/img/logotipo.png" alt="Logotipo do EcoTrend"
-                class="me-3 img-fluid mx-custom">
-            <h1 id="logo-img-legend" class="text-primary h5 m-0 fs-4 fs-md-3">EcoTrend</h1>
-        </div>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center"> 
+                    <img id="logo-img" src="src/assets/img/logotipo.png" alt="Logotipo do EcoTrend" class="me-3 img-fluid mx-custom"> 
+                    <h1 id="logo-img-legend" class="text-primary h5 m-0 fs-4 fs-md-3">EcoTrend</h1> 
+                </div>
 
-        <select class="form-select form-select-sm w-auto d-md-none">
-            <option value="">Home</option>
-            <option value="">Produtos</option>
-            <option value="">Contato</option>
-        </select>
+                <a href="#" class="btn btn-light ms-auto d-lg-none">
+                    <i class="fa-solid fa-shopping-cart text-primary"></i>
+                </a>
 
-        <nav class="d-none d-lg-none d-md-flex align-items-center gap-3 ">
-            <ul class="list-unstyled d-flex mb-0 gap-custom menu-nav-links">
-                <li><a href="#" class="text-primary text-decoration-none position-relative menu-link fs-5">
-                        Home
-                    </a></li>
-                <li><a href="#" class="text-primary text-decoration-none position-relative menu-link fs-5">
-                        Produtos
-                    </a></li>
-                <li><a href="#" class="text-primary text-decoration-none position-relative menu-link fs-5">
-                        Contato
-                    </a></li>
-            </ul>
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="src/pages/products.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="src/pages/contact.html">Contato</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-inline-flex">
+                        <i class="fa-solid fa-shopping-cart text-primary"></i>
+                    </a>
+                </div>
+            </div>
         </nav>
-
-        <nav class="d-none d-md-none d-lg-flex align-items-center gap-5">
-            <ul class="list-unstyled d-flex mb-0 gap-custom menu-nav-links">
-                <li><a href="#" class="text-primary text-decoration-none position-relative menu-link fs-5">
-                        Home
-                    </a></li>
-                <li><a href="#" class="text-primary text-decoration-none position-relative menu-link fs-5">
-                        Produtos
-                    </a></li>
-                <li><a href="#" class="text-primary text-decoration-none position-relative menu-link fs-5">
-                        Contato
-                    </a></li>
-            </ul>
-            <i id="cart" class="fa-solid fa-shopping-cart text-primary fs-3 fs-md-4"></i>
-        </nav>
-
-        <i id="cart" class="fa-solid fa-shopping-cart text-primary fs-3 fs-md-4 d-lg-none"></i>
     </header>
 
     <main>

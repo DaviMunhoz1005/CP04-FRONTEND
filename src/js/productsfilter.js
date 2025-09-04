@@ -27,5 +27,4 @@ document.getElementById('filterCategory').addEventListener('change', filterProdu
 document.getElementById('filterBrand').addEventListener('change', filterProducts);
 document.getElementById('filterPrice').addEventListener('change', filterProducts);
 
-// Executa o filtro ao carregar a página
 window.addEventListener('DOMContentLoaded', filterProducts);
