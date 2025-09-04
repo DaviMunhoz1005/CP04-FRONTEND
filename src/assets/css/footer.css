@@ -1,8 +1,8 @@
 .footer-link {
     font-family: var(--font-link);
     font-weight: bold;
+    position: relative; /* Adicione esta linha */
 }
-
 .footer-link::after {
     content: "";
     position: absolute;
@@ -17,4 +17,64 @@
 
 .footer-link:hover::after {
     width: 100%;
+}
+
+@media (max-width: 915px) {
+    footer {
+        font-size: 0.7rem;
+        padding-top: 0.2rem ;
+        padding-bottom: 0.2rem ;
+    }
+    footer .row > div {
+        margin-bottom: 0.2rem;
+    }
+    footer h5, footer h6 {
+        font-size: 0.85rem;
+        margin-bottom: 0.2rem ;
+    }
+    footer p, footer li, footer a {
+        font-size: 0.7rem ;
+        margin-bottom: 0.2rem ;
+    }
+    footer i, footer svg {
+        font-size: 0.8rem ;
+    }
+    footer .d-flex.gap-3 {
+        gap: 0.4rem ;
+        font-size: 0.8rem ;
+        justify-content: center;
+    }
+    footer .text-center.mt-4.pt-3 {
+        padding-top: 0.2rem ;
+        margin-top: 0.2rem ;
+    }
+    footer .container {
+        padding-left: 0.2rem ;
+        padding-right: 0.2rem ;
+        }
+}
+
+@media (max-width: 1368px) {
+    footer {
+        font-size: 0.9rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    footer h5, footer h6 {
+        font-size: 1.1rem;
+    }
+    footer p, footer li, footer a {
+        font-size: 0.95rem !important;
+    }
+    footer i, footer svg {
+        font-size: 1.1rem !important;
+    }
+    footer .d-flex.gap-3 {
+        gap: 1rem !important;
+        font-size: 1.1rem !important;
+    }
+    footer .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 }

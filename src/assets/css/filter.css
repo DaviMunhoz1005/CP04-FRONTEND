@@ -1,0 +1,22 @@
+#filterOffcanvas,
+#filterOffcanvas .offcanvas-title,
+#filterOffcanvas .form-label,
+#filterOffcanvas .form-select,
+#filterOffcanvas .dropdown-item {
+    color: #000 !important;
+}
+
+#filterOffcanvas {
+    background-color: #fff !important;
+}
+#filterOffcanvas .form-select {
+    background-color: #fff !important;
+    border: 1px solid #ccc;
+}
+#filterOffcanvas .btn-close {
+    filter: invert(0);
+}
+#filterOffcanvas .offcanvas-title,
+#filterOffcanvas .form-label {
+    color: #000 !important;
+}
