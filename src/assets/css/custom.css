@@ -3,8 +3,27 @@
     background-color: white !important;
 }
 
+.bg-dark {
+    background-image: url("../img/fundo-escuro.webp");
+    background-color: white !important;
+    border-color: var(--font-color-darker-green);
+}
+
 .text-primary {
     color: var(--font-color-darker) !important;
+}
+
+.text-dark {
+    color: var(--font-color-light) !important;
+}
+
+.btn-primary {
+    background-image: url("../img/fundo-verde.webp");
+    border-color: var(--font-color-darker-green);
+}
+
+.btn-primary:hover {
+    border-color: var(--font-color-light-green);
 }
 
 nav .gap-custom {
