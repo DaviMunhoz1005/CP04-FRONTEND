@@ -1,10 +1,7 @@
-
 .product-card {
     max-width: 220px;
     margin: 0 auto;
 }
-
-
 
 .btn-circle {
     display: inline-flex;
@@ -38,6 +35,11 @@
     font-weight: bold;
 }
 
+.label-filter {
+    font-family: var(--font-link); 
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px) and (max-width: 915px) {
     .product-img {
         min-height: 400px;
@@ -58,13 +60,6 @@
     }
 }
 
-
-.card {
-    /* max-width: 260px; */
-    /* margin: 0 auto; */
-    /* min-height: 380px; */
-}
-
 @media (max-width: 1368px) {
     .card {
         max-width: 260px;
@@ -76,8 +71,3 @@
         object-fit: contain;
     }
 }
-
-
-
-
-
