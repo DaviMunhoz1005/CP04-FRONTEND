@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/filter.css">
+    <link rel="stylesheet" href="../../assets/css/productDetail.css">
+</head>
+<body>
+   <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center"> 
+                    <img id="logo-img" src="../../assets/img/logotipo.png" alt="Logotipo do EcoTrend" class="me-3 img-fluid mx-custom"> 
+                    <h1 id="logo-img-legend" class="text-primary h5 m-0 fs-4 fs-md-3">EcoTrend</h1> 
+                </div>
+
+                <a href="#" class="btn btn-light ms-auto d-lg-none">
+                    <i class="fa-solid fa-shopping-cart text-primary"></i>
+                </a>
+
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="../../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="products.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="contact.html">Contato</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-inline-flex">
+                        <i class="fa-solid fa-shopping-cart text-primary"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-1 d-flex justify-content-center mb-3 mb-md-0">
+                    <img src="data:image/webp;base64,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" alt="Fone de Bambu Sustentável" 
+                    class=" product-img img-fluid">
+                </div>
+                <div class="col-12 col-md-6 order-2 text-center text-md-start">
+                    <h2 class="product-name"> Fone de Bambu Sustentável</h2>
+                    <p class="product-description"> Fone de ouvido com estrutura de bambu e cabos reciclados.</p>
+                    <h3 class="price text-success mb-3">R$ 299,90</h3>
+                    <button class="btn btn-success btn-lg">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-primary pt-3 pb-2 mt-3 border-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../../assets/img/logotipo.png" alt="Logotipo EcoTrend" class="me-2" style="max-height:40px;">
+                            <h5 id="logo-img-legend" class="m-0 fs-5">EcoTrend</h5>
+                        </div>
+                        <p class="small">
+                            Produtos ecológicos e sustentáveis para um futuro melhor.
+                            Compre consciente, viva consciente.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <h6 class="fw-bold mb-3">Navegação</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="../../index.html"
+                                    class="text-primary text-decoration-none footer-link position-relative">Home</a></li>
+                            <li><a href="products.html" class="text-primary text-decoration-none footer-link position-relative">Produtos</a>
+                            </li>
+                            <li><a href="contact.html" class="text-primary text-decoration-none footer-link position-relative">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <h6 class="fw-bold mb-3">Políticas</h6>
+                        <ul class="list-unstyled">
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Política
+                            de Privacidade</a></li>
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Trocas e
+                            Devoluções</a></li>
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Termos
+                            de Uso</a></li>
+                        <li><a href="#"
+                            class="text-primary text-decoration-none footer-link position-relative">Sustentabilidade</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h6 class="fw-bold mb-3">Contato</h6>
+                    <p class="small mb-1"><i class="fa-solid fa-envelope me-2"></i> eco@trend.com</p>
+                    <p class="small mb-1"><i class="fa-solid fa-phone me-2"></i>+55 (11) 98765-4321</p>
+                    <p class="small mb-3"><i class="fa-solid fa-location-dot me-2"></i> São Paulo - SP</p>
+
+                    <div class="d-flex gap-3 fs-5">
+                        <a href="https://www.facebook.com/login/?locale=pt_BR" class="text-primary"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" class="text-primary"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?lang=pt" class="text-primary"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://web.whatsapp.com/" class="text-primary"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 pt-3 border-top">
+                <p class="small mb-0">&copy; 2025 EcoTrend - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

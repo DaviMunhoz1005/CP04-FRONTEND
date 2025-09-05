@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/filter.css">
+    <link rel="stylesheet" href="../../assets/css/productDetail.css">
+</head>
+<body>
+   <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center"> 
+                    <img id="logo-img" src="../../assets/img/logotipo.png" alt="Logotipo do EcoTrend" class="me-3 img-fluid mx-custom"> 
+                    <h1 id="logo-img-legend" class="text-primary h5 m-0 fs-4 fs-md-3">EcoTrend</h1> 
+                </div>
+
+                <a href="#" class="btn btn-light ms-auto d-lg-none">
+                    <i class="fa-solid fa-shopping-cart text-primary"></i>
+                </a>
+
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="../../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="products.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="contact.html">Contato</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-inline-flex">
+                        <i class="fa-solid fa-shopping-cart text-primary"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-1 d-flex justify-content-center mb-3 mb-md-0">
+                    <img src="data:image/webp;base64,UklGRu4HAABXRUJQVlA4IOIHAABwJgCdASqpAI4APj0ejUSiIaGTSgR0IAPEsrdwF/iXMcXd78p+6f4jyY9Q3UPl/c0+ez0ibbPzFfsl+uXuf/kz7k/I560H+u/8D2AP2H9OP2Zf7//xPTCrIPRP7clmM0ndUfa+a3hjLDQAfV7v1tUHvL0P/7fxefrn+x9gP+bf2n9dvZX0YqiH65jjCBY0zjyRXd6XaWCkmUrRKZutUKE7AtD1H9RgFotpA5wJ0D7YbqvCNiZJYvo/CDU6CUxg1zaSuuJNxxEUCwr9LQRvvu4R3KhShGRIvWmhhZbiK+zHt/6yRmY80QsT3GpXM2GJwDoZ8oU7dpL/xy2pEO3S6dNmpjQzKE6UrvAHSVkc4nvbJEn7GP201V6FUOASuXnhBOXmtmdtPjAETJLGDF5CdYaQCR+HRUJms3n52njAAP79lBQHAPR0DGmxbVRz9o7EhiAAqOuirfgmFbIvYmH9Th1dUwRjMK5CtI8Uf/a5A31+fCbhGJ6vsTxMHjD3SU8qS99El4z7712//hAoyuyULfYVz+DS8UN1Nn/5hee0Es6DE3ZM3aiUf27kPGdjKg9UEc1ekLAKoBOWR7816LPOrm/YJCH3VIIsR9QhfH3Nepvw3XOMRcy19Tr3ecQ93o4UJjbsd8axmOzeP8mWId3u9YJUkbbDKxv9bIsgdg3Wg3OqF//6929NOvaFY8OQl6SxHjWqTv//7/8WiNdf4BxVRG23f8Q9I5wqzn5jiChw35oCap/UAwHxi3QojTlJjDc8UC73H0y+Es4xW1l7JKdHIng7hmRQz/5hPToja/3Djgd/neyk6j5rD2FMAEcGnRr5AkQHSASIhrsOHV/qAhI6waK6dT4kw2Y/31Gmgd0GMhoWVIwbuaPfD9nU3mrEvAoKAwn+uy99fhnWt4InEpUEzlQLO4rBcxVUntFnBVDF6a3GxAutjVvTrGREcEHNjjbas7bEy70gNkxA/Cy6ywrGy7hlfPq5LU1HBnxKxJDogNCF7F5tQm8KV4pTjFkZHTRGt+hN0WXeSIYWTb9ywxnKdj5hpeKBf8pC7qtIaebWoKqRJ9e5xv5CKnBe35tr1VBrA3X3AjmK/HyWIBP/SYusgoozwv1CIk8772Hk2pa9T5CKnh8nSsdsR5cG7ahy0K++j2Gvv2k5qInbOKesFftUk/Gu+0VeURw/hM4a7Y46YOb09DCxfZe2jdOMvhcCFns6WUuj6wTkNuoABbGCKeFZxGZb7qBl750f/G9Qpv/rhJhQC2LjbQ2ik+/2EeEPPMud0wbybb/Su2XEtKcZLERf/45mZB98EMLOswu3l3YolFfrMgVEUMtmP1G0Zl9q74DE77HvrkTmiGfxC3YooqWq6x6BkNmCNx0jFujsZ9LW2JfqtsguxtlAZiwmwUbpIpKFBtS8XXrB/ERmOY422FjtW6qLhhknmrh7oE41obKQPMPW7EOE32tUJmJfEn/TkqsfGrKb2lgWLdZ2QNvsuYGOSXt6JkGVx6z2bd6P7f8DkbTOqAN8yj/jRpPkOw7Xx5ouXQ04aW5tJd2z5nokn/y9WmC2YZdBwZc9KsZ8QDae+RgHqfj4opaFIZCkrTPQaahYnMVY+ycTfwfEaC11f55oyYonEX4frg1VGw4gYRUvWF+Ki/acye7xneJDbR7f3x4ROwNNwHNKLHkmUiCvcEFY6jWjkSMWosh7IIK6lRnxH5FrB6+XGXRsdXTpE2uNwI3PZFEgPqVDEMqsFDfYkaG+s+6e1w2QyCFyGO4J+0H638RYrFhG+7/rxmDJLUDNV/umqT4zDsiCNYJA3GzsSoV3V7SMdlNs8PnYF9r2TWHoj5H0Kyem0Fms0pg/yRHxye/1ftEnNIP7Idc59qUufSmKnWT1/TRbPudrUZzeo4YS1t8LxZXYDA2FWtHVsjIvXgSG25e6KLiTlqZcigFnwgHMPz4y0w27kivZcRBpw/kPFA84e7Gj8to/vVdYka6VdcnHjVPwkHvcw0Lsy+92wYGXBbcyf6/2L2d8zLlyFmp74FCw546cNDR1as7HCYPp1r9Gr2jzA+BsVUjnk5rQqLGDbkRqIyT8ySxQBlHZw4mjw57RbtSVdgypnF/NY/3OWg6rcUjtmcRCTdAwYKUHgSGyx36SxdgJC+Jpcu7hFlQdPA2J+8wymNZi/dKjuAQ82Vul+xexiYRWi6dHnUjax47S+L7L8YIE+SLaX9f85K5arofoAKANOutxnVhV/lbrucf0oYingr5ZhR8hEhDQdbky8uRk7fDsG7VgBj+Te0Is9cDvoURAAIkafl14f3EgMWMCi4wFOWqNRPnQwle7bxE4Vuhfn7nq8liR8vyTxJ7Ldnm3prV1VSvYEE27jd2B7FLRCxOX5yenK/r03tqyurjeKSp5cNLIJu+IiGcowkIvCeIN0ilW2nBUgQ+fSnyVjewgfCVUqBvyOYHQQZSm64Lln3SPqMaVzuUMzdFxkEMjuwU2NJmeZw8zZeOYE9yUru7LEVOdGqIWbbmbFXMXjsZxQzRnpPakHDjlVfCxSj6ozi/7BnaO3RErCR9TugVSU3Rf8UnPn2w2jlNF1f3Dbev0+5IdrK3pSCo/pQMatxKr5mQSR4cLTEMOmwkGoDTEZfHRGm1fblrKBKrHet/GAo89H9MOBRj4INtzSqQ/b90RLk5NoDpDfiN+TN8ZV85rS0xK9AAAAA==" 
+                    alt="Desodorante Natural" 
+                    class="product-img img-fluid">
+                </div>
+                <div class="col-12 col-md-6 order-2 text-center text-md-start">
+                    <h2 class="product-name"> Desodorante Natural</h2>
+                    <p class="product-description"> Sem alumínio e com fragrâncias naturais de lavanda.</p>
+                    <h3 class="price text-success mb-3">R$ 18,90</h3>
+                    <button class="btn btn-success btn-lg">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-primary pt-3 pb-2 mt-3 border-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../../assets/img/logotipo.png" alt="Logotipo EcoTrend" class="me-2" style="max-height:40px;">
+                            <h5 id="logo-img-legend" class="m-0 fs-5">EcoTrend</h5>
+                        </div>
+                        <p class="small">
+                            Produtos ecológicos e sustentáveis para um futuro melhor.
+                            Compre consciente, viva consciente.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <h6 class="fw-bold mb-3">Navegação</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="../../index.html"
+                                    class="text-primary text-decoration-none footer-link position-relative">Home</a></li>
+                            <li><a href="products.html" class="text-primary text-decoration-none footer-link position-relative">Produtos</a>
+                            </li>
+                            <li><a href="contact.html" class="text-primary text-decoration-none footer-link position-relative">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <h6 class="fw-bold mb-3">Políticas</h6>
+                        <ul class="list-unstyled">
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Política
+                            de Privacidade</a></li>
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Trocas e
+                            Devoluções</a></li>
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Termos
+                            de Uso</a></li>
+                        <li><a href="#"
+                            class="text-primary text-decoration-none footer-link position-relative">Sustentabilidade</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h6 class="fw-bold mb-3">Contato</h6>
+                    <p class="small mb-1"><i class="fa-solid fa-envelope me-2"></i> eco@trend.com</p>
+                    <p class="small mb-1"><i class="fa-solid fa-phone me-2"></i>+55 (11) 98765-4321</p>
+                    <p class="small mb-3"><i class="fa-solid fa-location-dot me-2"></i> São Paulo - SP</p>
+
+                    <div class="d-flex gap-3 fs-5">
+                        <a href="https://www.facebook.com/login/?locale=pt_BR" class="text-primary"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" class="text-primary"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?lang=pt" class="text-primary"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://web.whatsapp.com/" class="text-primary"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 pt-3 border-top">
+                <p class="small mb-0">&copy; 2025 EcoTrend - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
