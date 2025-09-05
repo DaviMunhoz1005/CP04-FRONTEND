@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/filter.css">
+    <link rel="stylesheet" href="../../assets/css/productDetail.css">
+</head>
+<body>
+   <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center"> 
+                    <img id="logo-img" src="../../assets/img/logotipo.png" alt="Logotipo do EcoTrend" class="me-3 img-fluid mx-custom"> 
+                    <h1 id="logo-img-legend" class="text-primary h5 m-0 fs-4 fs-md-3">EcoTrend</h1> 
+                </div>
+
+                <a href="#" class="btn btn-light ms-auto d-lg-none">
+                    <i class="fa-solid fa-shopping-cart text-primary"></i>
+                </a>
+
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="../../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="products.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-decoration-none position-relative menu-link fs-5" href="contact.html">Contato</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn btn-light ms-lg-3 d-none d-lg-inline-flex">
+                        <i class="fa-solid fa-shopping-cart text-primary"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-1 d-flex justify-content-center mb-3 mb-md-0">
+                    <img src= "data:image/webp;base64,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" class="card-img-top product-img" alt="Lâmpada LED Solar" 
+                    class=" product-img img-fluid">
+                </div>
+                <div class="col-12 col-md-6 order-2 text-center text-md-start">
+                    <h2 class="product-name"> Lâmpada LED Solar</h2>
+                    <p class="product-description"> Luminária LED movida a energia solar para ambientes externos.</p>
+                    <h3 class="price text-success mb-3">R$ 699,90</h3>
+                    <button class="btn btn-success btn-lg">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-primary pt-3 pb-2 mt-3 border-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="../../assets/img/logotipo.png" alt="Logotipo EcoTrend" class="me-2" style="max-height:40px;">
+                            <h5 id="logo-img-legend" class="m-0 fs-5">EcoTrend</h5>
+                        </div>
+                        <p class="small">
+                            Produtos ecológicos e sustentáveis para um futuro melhor.
+                            Compre consciente, viva consciente.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <h6 class="fw-bold mb-3">Navegação</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="../../index.html"
+                                    class="text-primary text-decoration-none footer-link position-relative">Home</a></li>
+                            <li><a href="products.html" class="text-primary text-decoration-none footer-link position-relative">Produtos</a>
+                            </li>
+                            <li><a href="contact.html" class="text-primary text-decoration-none footer-link position-relative">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <h6 class="fw-bold mb-3">Políticas</h6>
+                        <ul class="list-unstyled">
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Política
+                            de Privacidade</a></li>
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Trocas e
+                            Devoluções</a></li>
+                        <li><a href="#" class="text-primary text-decoration-none footer-link position-relative">Termos
+                            de Uso</a></li>
+                        <li><a href="#"
+                            class="text-primary text-decoration-none footer-link position-relative">Sustentabilidade</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h6 class="fw-bold mb-3">Contato</h6>
+                    <p class="small mb-1"><i class="fa-solid fa-envelope me-2"></i> eco@trend.com</p>
+                    <p class="small mb-1"><i class="fa-solid fa-phone me-2"></i>+55 (11) 98765-4321</p>
+                    <p class="small mb-3"><i class="fa-solid fa-location-dot me-2"></i> São Paulo - SP</p>
+
+                    <div class="d-flex gap-3 fs-5">
+                        <a href="https://www.facebook.com/login/?locale=pt_BR" class="text-primary"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" class="text-primary"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?lang=pt" class="text-primary"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://web.whatsapp.com/" class="text-primary"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 pt-3 border-top">
+                <p class="small mb-0">&copy; 2025 EcoTrend - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
